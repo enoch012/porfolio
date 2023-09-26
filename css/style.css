@@ -8375,7 +8375,7 @@ h1, h2, h3, h4, h5,
     width: 40px;
     height: 40px;
     content: '';
-    background: #3e64ff;
+    /*background: #3e64ff;*/
     z-index: -1;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -8462,12 +8462,12 @@ h1, h2, h3, h4, h5,
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 120px;
+  bottom: 80px;
   z-index: 2; }
 
 .mouse-icon {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border: 1px solid transparent;
   cursor: pointer;
   position: relative;
@@ -8485,7 +8485,9 @@ h1, h2, h3, h4, h5,
     z-index: -1;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    transform: rotate(45deg);
+    border-radius: 50%;
+  }
 
 .mouse-wheel {
   height: 70px;
@@ -8573,7 +8575,7 @@ h1, h2, h3, h4, h5,
   -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600; }
@@ -8585,8 +8587,8 @@ h1, h2, h3, h4, h5,
     color: #fff !important; }
     .btn.btn-primary:hover {
       border: 1px solid #3e64ff !important;
-      background: #3e64ff !important;
-      color: #000000 !important; }
+      background: #fff !important;
+      color: #3e64ff !important; }
     .btn.btn-primary.btn-outline-primary {
       border: 2px solid #3e64ff !important;
       background: transparent !important;
@@ -8632,11 +8634,22 @@ h1, h2, h3, h4, h5,
   width: 100%;
   z-index: 0;
   position: relative; }
+
   .ftco-about .img-about .img {
     display: block;
-    width: 100%;
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
     position: relative;
+    background-color: #ffda54;
+    margin: auto auto;
+    overflow: hidden;
     z-index: 1; }
+
+.ftco-about .img-about .img .pro-img {
+    position: absolute;
+    width: 300px;
+  }
 
 .ftco-about ul.about-info {
   display: inline-block;
@@ -8647,11 +8660,13 @@ h1, h2, h3, h4, h5,
     list-style: none;
     margin-bottom: 10px; }
     .ftco-about ul.about-info li span {
-      width: calc(100% - 130px); }
+      width: calc(100% - 130px);
+      color : #777;
+    }
       .ftco-about ul.about-info li span:first-child {
         font-weight: 600;
         color: #000000;
-        width: 130px; }
+        width: 100px; }
 
 .ftco-about .counter-wrap .text p {
   font-size: 20px; }
@@ -9209,7 +9224,14 @@ textarea.form-control {
   .heading-section.heading-section-white h2 {
     color: #fff; }
   .heading-section.heading-section-white p {
-    color: rgba(255, 255, 255, 0.9); }
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* 추가 */
+.heading-section .intro {
+  padding-left: 1.2rem;
+  color : #666;
+}
 
 .img,
 .blog-img,
